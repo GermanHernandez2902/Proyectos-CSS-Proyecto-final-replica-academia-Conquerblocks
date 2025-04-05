@@ -1,0 +1,20 @@
+{
+  "name": "-",
+  "version": "0.0.1",
+  "description": "En este repositorio he subido mi proyecto final de CSS",
+  "private": true,
+  "keywords": [],
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+ 
+  },
+
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.86.0",
+    "vite": "^6.2.3"
+  }
+}

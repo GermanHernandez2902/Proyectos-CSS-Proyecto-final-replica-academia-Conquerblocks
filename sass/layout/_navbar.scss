@@ -1,0 +1,50 @@
+@use '../abstracts/abstracts' as *;
+
+.navbar {
+    background-color: $black;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+
+    &__logo {
+        color: $yellow;
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: $blue;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $yellow;
+                text-shadow: 0 0 10px $yellow;
+            }
+        }
+    }
+}
+
+// Tablet
+@include breakpoint(tablet) {
+    .navbar {
+        padding: 16px 40px;
+
+        &__logo {
+            font-size: 24px;
+        }
+
+        &__menu {
+            gap: 30px;
+        }
+    }
+}

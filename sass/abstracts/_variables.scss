@@ -1,0 +1,27 @@
+// Variables for the project
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1200px;
+$bp-desktop-xl: 1440px;
+
+// Variables for fonts
+$font-family: "Space Grotesk", sans-serif;
+
+// Colors
+// Colors con paleta nueva
+$black:       #000000;   // Fondo negro puro
+$green:       #00ff00;   // Verde neón
+$dark-grey:   #1a1a1a;   // Gris muy oscuro para secciones
+$grey:        #888888;   // Gris medio para textos
+$light-grey:  #d9d9d9;   // Para bordes o contrastes suaves
+$blue:        #00ffff;   // Azul claro neón (cyan)
+$dark-blue:   #00aaff;   // Azul eléctrico para enlaces o hover
+$white:       #ffffff;   // Texto claro
+$yellow: #E6FB04; // Neon Yellow – se ve brutal con negro y azul neón
+$light-white: #f3f4ff;
+
+
+// Margins
+$mb-1: 40px; //margin-bottom for sections
+$mb-2: 20px; //margin-bottom for internal elements
+$br-1: 10px; //border-radius

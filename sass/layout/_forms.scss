@@ -1,0 +1,52 @@
+@use '../abstracts/abstracts' as *;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background-color: $black;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba($blue, 0.2);
+
+    label {
+        color: $light-grey;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    input,
+    textarea,
+    select {
+        padding: 12px;
+        border: 2px solid $dark-blue;
+        background-color: $dark-grey;
+        color: $white;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: $yellow;
+            box-shadow: 0 0 10px $yellow;
+        }
+    }
+
+    button {
+        padding: 12px;
+        background: linear-gradient(135deg, $blue, $green);
+        color: $black;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background: linear-gradient(135deg, $yellow, $blue);
+            box-shadow: 0 0 15px $yellow;
+        }
+    }
+}

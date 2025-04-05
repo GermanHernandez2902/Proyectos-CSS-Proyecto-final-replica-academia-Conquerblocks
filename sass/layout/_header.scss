@@ -1,0 +1,108 @@
+@use '../abstracts/abstracts' as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(90deg, $black 0%, $dark-blue 50%, $black 100%); // Fondo oscuro
+    padding: 16px;
+    margin-bottom: $mb-1;
+    gap: 20px;
+
+    &__nav {
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            gap: 20px 40px;
+            backface-visibility: hidden;
+
+            a {
+                display: inline-block;
+                min-width: max-content;
+                @include link();
+                text-transform: capitalize;
+                color: $white;
+
+                &:hover {
+                    color: $blue;
+                    text-shadow: 0 0 5px $blue;
+                }
+            }
+
+            .active {
+                font-weight: bold;
+                color: $yellow;
+                text-decoration: underline;
+                text-underline-offset: 10px;
+                text-decoration-thickness: 3px;
+
+                &:hover {
+                    text-shadow: 0 0 5px $yellow;
+                }
+            }
+        }
+    }
+}
+
+// Media query for tablet
+@include breakpoint(tablet) {
+    .header {
+        flex-direction: row;
+        padding: 32px;
+        justify-content: space-between;
+
+        &__nav {
+            ul {
+                flex-wrap: nowrap;
+                gap: 10px;
+            }
+        }
+    }   
+}
+
+// Media query for tablethorizontal
+@include breakpoint(tablethorizontal) {
+    .header {
+        padding: 48px;
+        margin-bottom: 80px;
+
+        &__nav {
+            ul { 
+                gap: 24px;
+            }
+        }
+    }
+}
+
+// Media query for desktop
+@include breakpoint(desktop) {
+    .header {
+        padding: 48px 80px;
+        margin-bottom: 80px;
+
+        &__nav {
+            ul { 
+                gap: 30px;
+            }
+        }
+    }
+}
+
+// Media query for desktopxl
+@include breakpoint(desktopxl) {
+    .header {
+        padding: 48px 160px;
+        margin-bottom: 80px;
+
+        &__nav {
+            ul { 
+                gap: 30px;
+            }
+        }
+    }
+}

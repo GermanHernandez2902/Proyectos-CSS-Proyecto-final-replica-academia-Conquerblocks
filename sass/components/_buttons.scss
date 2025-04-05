@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as var;
+
+.btn-cursos {
+    background-color: var.$black;
+    color: var.$green;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    text-shadow: none;
+
+    &:hover {
+        background: linear-gradient(135deg, var.$dark-blue, var.$blue);
+        box-shadow: 0 0 15px var.$blue;
+        transform: scale(1.05);
+    }
+}

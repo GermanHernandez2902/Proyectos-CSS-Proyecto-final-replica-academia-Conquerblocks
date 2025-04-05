@@ -1,0 +1,43 @@
+@use '../abstracts/abstracts' as *;
+@use '../components/components';
+
+
+
+.main {
+    background-color: $black;
+    color: $white;
+    padding: 0 16px;
+    min-height: 100vh;
+
+    // Para párrafos y textos generales dentro del main (si no lo sobreescriben)
+    p {
+        color: $grey;
+    }
+
+    a {
+        color: $blue;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $yellow;
+            text-shadow: 0 0 10px $yellow;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        padding: 0 32px;
+    }
+
+    @include breakpoint(tablethorizontal) {
+        padding: 0 48px;
+    }
+
+    @include breakpoint(desktop) {
+        padding: 0 80px;
+    }
+
+    @include breakpoint(desktopxl) {
+        padding: 0 160px;
+    }
+}
