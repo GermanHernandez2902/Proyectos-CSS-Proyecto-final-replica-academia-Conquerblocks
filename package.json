@@ -12,7 +12,7 @@
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "sass": "^1.86.0",
-    "vite": "^6.2.3"
+    "vite": "^4.5.0"
   },
   "main": "index.js",
   "repository": "https://github.com/GermanHernandez2902/Proyectos-CSS-Proyecto-final-replica-academia-Conquerblocks.git",
